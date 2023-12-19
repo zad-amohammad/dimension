@@ -1,9 +1,5 @@
-from datetime import timedelta
-from collections import defaultdict
-
 from odoo import api, fields, models, _
 from odoo.tools import float_compare
-from odoo.exceptions import UserError
 
 
 

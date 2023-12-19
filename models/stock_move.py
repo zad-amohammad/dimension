@@ -1,25 +1,12 @@
-from odoo import fields, api, models
-import logging
-from collections import defaultdict, namedtuple
-
+from collections import  namedtuple
 from dateutil.relativedelta import relativedelta
-
-from odoo import SUPERUSER_ID, _, api, fields, models, registry
-from odoo.exceptions import UserError
-from odoo.osv import expression
-from odoo.tools import float_compare, float_is_zero, html_escape
-from odoo.tools.misc import split_every
+from odoo import _, api, fields, models
 
 class StockMove(models.Model):
     _inherit = "stock.move"
 
-   
     dimension = fields.Char()
 
-    
-
-class StockPicking(models.Model):
-    _inherit = "stock.picking"
 
 class StockRule(models.Model):
     _inherit = 'procurement.group'
